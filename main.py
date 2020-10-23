@@ -447,15 +447,15 @@ Please choose an animal.
 Choice: """))
 if pet_choice == 1:
     print(f"\nCongratulations! {dog.name} is now your pet! Treat them with care or else!\n")
-if pet_choice == 2:
+elif pet_choice == 2:
     print(f"\nCongratulations! {cat.name} is now your pet! Treat them with care or else!\n")
-if pet_choice == 3:
+elif pet_choice == 3:
     print(f"\nCongratulations! {turtle.name} is now your pet! Treat them with care or else!\n")
-if pet_choice == 4:
+elif pet_choice == 4:
     print(f"\nCongratulations! {snake.name} is now your pet! Treat them with care or else!\n")
-if pet_choice == 5:
+elif pet_choice == 5:
     print(f"\nCongratulations! {fish.name} is now your pet! Treat them with care or else!\n")
-if pet_choice == 6:
+elif pet_choice == 6:
     print(f"\nCongratulations! {bird.name} is now your pet! Treat them with care or else!\n")
 
 main()
