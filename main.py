@@ -70,17 +70,17 @@ def main():
             else:
                 print("Please choose the correct option.")
             if dog.sadness > 80 and dog.sadness < 100:
-                print(f"{dog.name} is very sad. Please cheer them up!")
+                print(f"{dog.name} is very sad. Please cheer them up!\n")
             if dog.sadness >= 100:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
             if dog.fullness < 20 and dog.fullness > 0:
-                print(f"{dog.name} is starving! Feed {dog.name} immediately!")
+                print(f"{dog.name} is starving! Feed {dog.name} immediately!\n")
             if dog.fullness <= 0:
                 print("Your pet died because it starved to death. You suck!")
                 break
             if dog.happiness < 20 and dog.happiness > 0:
-                print(f"{dog.name} is very sad. Please cheer them up!")
+                print(f"{dog.name} is very sad. Please cheer them up!\n")
             if dog.happiness <= 0:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
@@ -122,17 +122,17 @@ def main():
             else:
                 print("Please choose the correct option.")
             if cat.sadness > 80 and cat.sadness < 100:
-                print(f"{cat.name} is very sad. Please cheer them up!")
+                print(f"{cat.name} is very sad. Please cheer them up!\n")
             if cat.sadness >= 100:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
             if cat.fullness < 20 and cat.fullness > 0:
-                print(f"{cat.name} is starving! Feed {cat.name} immediately!")
+                print(f"{cat.name} is starving! Feed {cat.name} immediately!\n")
             if cat.fullness <= 0:
                 print("Your pet died because it starved to death. You suck!")
                 break
             if cat.happiness < 20 and cat.happiness > 0:
-                print(f"{cat.name} is very sad. Please cheer them up!")
+                print(f"{cat.name} is very sad. Please cheer them up!\n")
             if cat.happiness <= 0:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
@@ -174,17 +174,17 @@ def main():
             else:
                 print("Please choose the correct option.")
             if turtle.sadness > 80 and turtle.sadness < 100:
-                print(f"{turtle.name} is very sad. Please cheer them up!")
+                print(f"{turtle.name} is very sad. Please cheer them up!\n")
             if turtle.sadness >= 100:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
             if turtle.fullness < 20 and turtle.fullness > 0:
-                print(f"{turtle.name} is starving! Feed {turtle.name} immediately!")
+                print(f"{turtle.name} is starving! Feed {turtle.name} immediately!\n")
             if turtle.fullness <= 0:
                 print("Your pet died because it starved to death. You suck!")
                 break
             if turtle.happiness < 20 and turtle.happiness > 0:
-                print(f"{turtle.name} is very sad. Please cheer them up!")
+                print(f"{turtle.name} is very sad. Please cheer them up!\n")
             if turtle.happiness <= 0:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
@@ -226,17 +226,17 @@ def main():
             else:
                 print("Please choose the correct option.")
             if snake.sadness > 80 and snake.sadness < 100:
-                print(f"{snake.name} is very sad. Please cheer them up!")
+                print(f"{snake.name} is very sad. Please cheer them up!\n")
             if snake.sadness >= 100:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
             if snake.fullness < 20 and snake.fullness > 0:
-                print(f"{snake.name} is starving! Feed {snake.name} immediately!")
+                print(f"{snake.name} is starving! Feed {snake.name} immediately!\n")
             if snake.fullness <= 0:
                 print("Your pet died because it starved to death. You suck!")
                 break
             if snake.happiness < 20 and snake.happiness > 0:
-                print(f"{snake.name} is very sad. Please cheer them up!")
+                print(f"{snake.name} is very sad. Please cheer them up!\n")
             if snake.happiness <= 0:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
@@ -278,12 +278,12 @@ def main():
             else:
                 print("Please choose the correct option.")
             if fish.sadness > 80 and fish.sadness < 100:
-                print(f"{fish.name} is very sad. Please cheer them up!")
+                print(f"{fish.name} is very sad. Please cheer them up!\n")
             if fish.sadness >= 100:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
             if fish.fullness < 20 and fish.fullness > 0:
-                print(f"{fish.name} is starving! Feed {fish.name} immediately!")
+                print(f"{fish.name} is starving! Feed {fish.name} immediately!\n")
             if fish.fullness <= 0:
                 print("Your pet died because it starved to death. You suck!")
                 break
@@ -291,7 +291,7 @@ def main():
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
             if fish.happiness < 20 and fish.happiness > 0:
-                print(f"{fish.name} is very sad. Please cheer them up!")
+                print(f"{fish.name} is very sad. Please cheer them up!\n")
             if fish.happiness >= 100:
                 print("You have achieved maximum pet happiness. \nCongratulations, you win!")
                 break
@@ -330,17 +330,17 @@ def main():
             else:
                 print("Please choose the correct option.")
             if bird.sadness > 80 and bird.sadness < 100:
-                print(f"{bird.name} is very sad. Please cheer them up!")
+                print(f"{bird.name} is very sad. Please cheer them up!\n")
             if bird.sadness >= 100:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
             if bird.fullness < 20 and bird.fullness > 0:
-                print(f"{bird.name} is starving! Feed {bird.name} immediately!")
+                print(f"{bird.name} is starving! Feed {bird.name} immediately!\n")
             if bird.fullness <= 0:
                 print("Your pet died because it starved to death. You suck!")
                 break
             if bird.happiness < 20 and bird.happiness > 0:
-                print(f"{bird.name} is very sad. Please cheer them up!")
+                print(f"{bird.name} is very sad. Please cheer them up!\n")
             if bird.happiness <= 0:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break

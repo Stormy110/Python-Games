@@ -10,20 +10,22 @@ class Pet:
         self.fullness += 15
         self.fatness += 4
         self.happiness += 3
+        self.sadness -= 2
         print(f"\n{self.name} has been fed a nice bowl of slop. Their fullness level is {self.fullness}.\n")
 
     def play_pet(self):
         self.happiness += 7
+        self.sadness -= 3
         print(f"\n{self.name} is so happy from the fun play time. Their happiness level is {self.happiness}.\n")
 
     def ignore_pet(self):
-        self.sadness += 20
+        self.sadness += 25
         print(f"\n{self.name} has been ignored. Their sadness level is {self.sadness}.\n")
 
     def stay_alive(self):
-        self.fullness -= 5
-        self.happiness -= 5
-        self.sadness += 7
+        self.fullness -= 4
+        self.happiness -= 4
+        self.sadness += 3
         self.fatness += 2
 
     def give_toy(self):
@@ -39,17 +41,20 @@ class Pet:
     def exercise(self):
         self.happiness += 5
         self.fullness -= 5
-        self.fatness -= 5
+        self.fatness -= 10
+        self.sadness -= 2
         print(f"\n{self.name} is shredding all that fat off with these intense exercises.\n")
     
     def treat(self):
         self.happiness += 10
         self.fullness += 5
-        self.fatness += 10
+        self.fatness += 15
+        self.sadness -= 3
         print(f"\nYummmm! {self.name} loves treats! {self.name} wants another treat!\n")
 
     def get_status(self):
         print(f"""
+        Name: {self.name}
         Fullness: {self.fullness}
         Happiness: {self.happiness}
         Sadness: {self.sadness}
