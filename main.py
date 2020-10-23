@@ -92,6 +92,11 @@ def main():
             if dog.fatness >= 100 or dog.fullness >= 100:
                 print(f"{dog.name} has had a heart attack and died. Next time exercise your pet!")
                 break
+            if dog.boredom > 80 and dog.boredom < 100:
+                print(f"{dog.name} is very bored. They are thinking about running away from your boring ass.")
+            if dog.boredom >= 100:
+                print(f"{dog.name} ran away from you because you are a boring person.")
+                break
         elif pet_choice == 2:
             if choice == 1:
                 cat.play_pet()
@@ -143,6 +148,11 @@ def main():
                 print(f"{cat.name} has gotten too fat! {cat.name} needs to exercise!\n")
             if cat.fatness >= 100 or cat.fullness >= 100:
                 print(f"{cat.name} has had a heart attack and died. Next time exercise your pet!")
+                break
+            if cat.boredom > 80 and cat.boredom < 100:
+                print(f"{cat.name} is very bored. They are thinking about running away from your boring ass.")
+            if cat.boredom >= 100:
+                print(f"{cat.name} ran away from you because you are a boring person.")
                 break
         elif pet_choice == 3:
             if choice == 1:
@@ -196,6 +206,11 @@ def main():
             if turtle.fatness >= 100 or turtle.fullness >= 100:
                 print(f"{turtle.name} has had a heart attack and died. Next time exercise your pet!")
                 break
+            if turtle.boredom > 80 and turtle.boredom < 100:
+                print(f"{turtle.name} is very bored. They are thinking about running away from your boring ass.")
+            if turtle.boredom >= 100:
+                print(f"{turtle.name} ran away from you because you are a boring person.")
+                break
         elif pet_choice == 4:
             if choice == 1:
                 snake.play_pet()
@@ -247,6 +262,11 @@ def main():
                 print(f"{snake.name} has gotten too fat! {snake.name} needs to exercise!\n")
             if snake.fatness >= 100 or snake.fullness >= 100:
                 print(f"{snake.name} has had a heart attack and died. Next time exercise your pet!")
+                break
+            if snake.boredom > 80 and snake.boredom < 100:
+                print(f"{snake.name} is very bored. They are thinking about running away from your boring ass.")
+            if snake.boredom >= 100:
+                print(f"{snake.name} ran away from you because you are a boring person.")
                 break
         elif pet_choice == 5:
             if choice == 1:
@@ -300,6 +320,11 @@ def main():
             if fish.fatness >= 100 or fish.fullness >= 100:
                 print(f"{fish.name} has had a heart attack and died. Next time exercise your pet!")
                 break
+            if fish.boredom > 80 and fish.boredom < 100:
+                print(f"{fish.name} is very bored. They are thinking about running away from your boring ass.")
+            if fish.boredom >= 100:
+                print(f"{fish.name} ran away from you because you are a boring person.")
+                break
         elif pet_choice == 6:
             if choice == 1:
                 bird.play_pet()
@@ -352,15 +377,20 @@ def main():
             if bird.fatness >= 100 or bird.fullness >= 100:
                 print(f"{bird.name} has had a heart attack and died. Next time exercise your pet!")
                 break
+            if bird.boredom > 80 and bird.boredom < 100:
+                print(f"{bird.name} is very bored. They are thinking about running away from your boring ass.")
+            if bird.boredom >= 100:
+                print(f"{bird.name} ran away from you because you are a boring person.")
+                break
         else:
-            print("Pick the a pet.")
+            print("Pick a pet.")
         
-dog = Pet("Beetlejuice", 60, 50, 0, 25)
-cat = Pet("Meow ZeDong", 60, 45, -1, 15)
-turtle = Pet("Leonardo", 60, 45, 1, 10)
-snake = Pet("Fluffy", 60, 50, 5, 5)
-fish = Pet("Jaws", 60, 60, 5, 0)
-bird = Pet("Frank", 60, 45, 3, 0)
+dog = Pet("Beetlejuice", 60, 55, 0, 25)
+cat = Pet("Meow ZeDong", 60, 50, -1, 15)
+turtle = Pet("Leonardo", 60, 50, 1, 40)
+snake = Pet("Fluffy", 60, 50, 5, 25)
+fish = Pet("Jaws", 60, 50, 55, 20)
+bird = Pet("Frank", 60, 50, 3, 20)
 
 pet_choice = int(input("""
 Please choose an animal.
