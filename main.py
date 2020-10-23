@@ -65,16 +65,22 @@ def main():
                 dog.treat()
                 dog.stay_alive()
             elif choice == 9:
-                print("You abandoned your pet. Shortly after, you were hit by a bus and sent to hell.")
+                print("You abandoned your pet. Shortly after, you were hit by a bus. You suck!")
                 break
             else:
                 print("Please choose the correct option.")
+            if dog.sadness > 80 and dog.sadness < 100:
+                print(f"{dog.name} is very sad. Please cheer them up!")
             if dog.sadness >= 100:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
+            if dog.fullness < 20 and dog.fullness > 0:
+                print(f"{dog.name} is starving! Feed {dog.name} immediately!")
             if dog.fullness <= 0:
                 print("Your pet died because it starved to death. You suck!")
                 break
+            if dog.happiness < 20 and dog.happiness > 0:
+                print(f"{dog.name} is very sad. Please cheer them up!")
             if dog.happiness <= 0:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
@@ -83,7 +89,7 @@ def main():
                 break
             if dog.fatness > 80 and dog.fatness < 100:
                 print(f"{dog.name} has gotten too fat! {dog.name} needs to exercise!\n")
-            if dog.fatness >= 100:
+            if dog.fatness >= 100 or dog.fullness >= 100:
                 print(f"{dog.name} has had a heart attack and died. Next time exercise your pet!")
                 break
         elif pet_choice == 2:
@@ -111,16 +117,22 @@ def main():
                 cat.treat()
                 cat.stay_alive()
             elif choice == 9:
-                print("You abandoned your pet. Shortly after, you were hit by a bus and sent to hell.")
+                print("You abandoned your pet. Shortly after, you were hit by a bus. You suck!")
                 break
             else:
                 print("Please choose the correct option.")
+            if cat.sadness > 80 and cat.sadness < 100:
+                print(f"{cat.name} is very sad. Please cheer them up!")
             if cat.sadness >= 100:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
+            if cat.fullness < 20 and cat.fullness > 0:
+                print(f"{cat.name} is starving! Feed {cat.name} immediately!")
             if cat.fullness <= 0:
                 print("Your pet died because it starved to death. You suck!")
                 break
+            if cat.happiness < 20 and cat.happiness > 0:
+                print(f"{cat.name} is very sad. Please cheer them up!")
             if cat.happiness <= 0:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
@@ -129,7 +141,7 @@ def main():
                 break
             if cat.fatness > 80 and cat.fatness < 100:
                 print(f"{cat.name} has gotten too fat! {cat.name} needs to exercise!\n")
-            if cat.fatness >= 100:
+            if cat.fatness >= 100 or cat.fullness >= 100:
                 print(f"{cat.name} has had a heart attack and died. Next time exercise your pet!")
                 break
         elif pet_choice == 3:
@@ -157,16 +169,22 @@ def main():
                 turtle.treat()
                 turtle.stay_alive()
             elif choice == 9:
-                print("You abandoned your pet. Shortly after, you were hit by a bus and sent to hell.")
+                print("You abandoned your pet. Shortly after, you were hit by a bus. You suck!")
                 break
             else:
                 print("Please choose the correct option.")
+            if turtle.sadness > 80 and turtle.sadness < 100:
+                print(f"{turtle.name} is very sad. Please cheer them up!")
             if turtle.sadness >= 100:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
+            if turtle.fullness < 20 and turtle.fullness > 0:
+                print(f"{turtle.name} is starving! Feed {turtle.name} immediately!")
             if turtle.fullness <= 0:
                 print("Your pet died because it starved to death. You suck!")
                 break
+            if turtle.happiness < 20 and turtle.happiness > 0:
+                print(f"{turtle.name} is very sad. Please cheer them up!")
             if turtle.happiness <= 0:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
@@ -175,7 +193,7 @@ def main():
                 break
             if turtle.fatness > 80 and turtle.fatness < 100:
                 print(f"{turtle.name} has gotten too fat! {turtle.name} needs to exercise!\n")
-            if turtle.fatness >= 100:
+            if turtle.fatness >= 100 or turtle.fullness >= 100:
                 print(f"{turtle.name} has had a heart attack and died. Next time exercise your pet!")
                 break
         elif pet_choice == 4:
@@ -203,16 +221,22 @@ def main():
                 snake.treat()
                 snake.stay_alive()
             elif choice == 9:
-                print("You abandoned your pet. Shortly after, you were hit by a bus and sent to hell.")
+                print("You abandoned your pet. Shortly after, you were hit by a bus. You suck!")
                 break
             else:
                 print("Please choose the correct option.")
+            if snake.sadness > 80 and snake.sadness < 100:
+                print(f"{snake.name} is very sad. Please cheer them up!")
             if snake.sadness >= 100:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
+            if snake.fullness < 20 and snake.fullness > 0:
+                print(f"{snake.name} is starving! Feed {snake.name} immediately!")
             if snake.fullness <= 0:
                 print("Your pet died because it starved to death. You suck!")
                 break
+            if snake.happiness < 20 and snake.happiness > 0:
+                print(f"{snake.name} is very sad. Please cheer them up!")
             if snake.happiness <= 0:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
@@ -221,7 +245,7 @@ def main():
                 break
             if snake.fatness > 80 and snake.fatness < 100:
                 print(f"{snake.name} has gotten too fat! {snake.name} needs to exercise!\n")
-            if snake.fatness >= 100:
+            if snake.fatness >= 100 or snake.fullness >= 100:
                 print(f"{snake.name} has had a heart attack and died. Next time exercise your pet!")
                 break
         elif pet_choice == 5:
@@ -249,25 +273,31 @@ def main():
                 fish.treat()
                 fish.stay_alive()
             elif choice == 9:
-                print("You abandoned your pet. Shortly after, you were hit by a bus and sent to hell.")
+                print("You abandoned your pet. Shortly after, you were hit by a bus. You suck!")
                 break
             else:
                 print("Please choose the correct option.")
+            if fish.sadness > 80 and fish.sadness < 100:
+                print(f"{fish.name} is very sad. Please cheer them up!")
             if fish.sadness >= 100:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
+            if fish.fullness < 20 and fish.fullness > 0:
+                print(f"{fish.name} is starving! Feed {fish.name} immediately!")
             if fish.fullness <= 0:
                 print("Your pet died because it starved to death. You suck!")
                 break
             if fish.happiness <= 0:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
+            if fish.happiness < 20 and fish.happiness > 0:
+                print(f"{fish.name} is very sad. Please cheer them up!")
             if fish.happiness >= 100:
                 print("You have achieved maximum pet happiness. \nCongratulations, you win!")
                 break
             if fish.fatness > 80 and fish.fatness < 100:
                 print(f"{fish.name} has gotten too fat! {fish.name} needs to exercise!\n")
-            if fish.fatness >= 100:
+            if fish.fatness >= 100 or fish.fullness >= 100:
                 print(f"{fish.name} has had a heart attack and died. Next time exercise your pet!")
                 break
         elif pet_choice == 6:
@@ -295,25 +325,31 @@ def main():
                 bird.treat()
                 bird.stay_alive()
             elif choice == 9:
-                print("You abandoned your pet. Shortly after, you were hit by a bus and sent to hell.")
+                print("You abandoned your pet. Shortly after, you were hit by a bus. You suck!")
                 break
             else:
                 print("Please choose the correct option.")
+            if bird.sadness > 80 and bird.sadness < 100:
+                print(f"{bird.name} is very sad. Please cheer them up!")
             if bird.sadness >= 100:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
+            if bird.fullness < 20 and bird.fullness > 0:
+                print(f"{bird.name} is starving! Feed {bird.name} immediately!")
             if bird.fullness <= 0:
                 print("Your pet died because it starved to death. You suck!")
                 break
+            if bird.happiness < 20 and bird.happiness > 0:
+                print(f"{bird.name} is very sad. Please cheer them up!")
             if bird.happiness <= 0:
                 print("Your pet died because you are a terrible person and you broke it's heart.")
                 break
             if bird.happiness >= 100:
                 print("You have achieved maximum pet happiness. \nCongratulations, you win!")
                 break
-            if bird.fatness > 80 and bird.fatness < 100:
+            if bird.fatness > 80 and bird.fatness < 100 :
                 print(f"{bird.name} has gotten too fat! {bird.name} needs to exercise!\n")
-            if bird.fatness >= 100:
+            if bird.fatness >= 100 or bird.fullness >= 100:
                 print(f"{bird.name} has had a heart attack and died. Next time exercise your pet!")
                 break
         else:

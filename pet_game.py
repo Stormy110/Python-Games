@@ -13,7 +13,7 @@ class Pet:
         print(f"\n{self.name} has been fed a nice bowl of slop. Their fullness level is {self.fullness}.\n")
 
     def play_pet(self):
-        self.happiness += 6
+        self.happiness += 7
         print(f"\n{self.name} is so happy from the fun play time. Their happiness level is {self.happiness}.\n")
 
     def ignore_pet(self):
@@ -22,7 +22,7 @@ class Pet:
 
     def stay_alive(self):
         self.fullness -= 5
-        self.happiness -= 7
+        self.happiness -= 5
         self.sadness += 7
         self.fatness += 2
 
