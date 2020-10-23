@@ -79,8 +79,8 @@ class Pet:
     
     def speak(self):
         print(f""" 
-        You yell out to {self.name}. 
-        They stare at you strangely for a few moments before loudly yelling
-        {randphrase}!
+You yell out to {self.name}. 
+They stare at you strangely for a few moments before loudly yelling
+{randphrase}!
         """)
 
