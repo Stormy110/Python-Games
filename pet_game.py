@@ -1,3 +1,11 @@
+import random
+
+pet_phrases = ["Tweet Tweet", "Woof Woof!", "Meow", "HELLO SERVANT!", "I WILL TAKE OVER THE WORLD!", "Ribbit RIBBIT!", "CLUCK CLUCK!"]
+
+randphrase = random.choice(pet_phrases)
+
+
+
 class Pet:
     def __init__(self,name,fullness,happiness,sadness,fatness,boredom=0):
         self.name = name
@@ -68,5 +76,11 @@ class Pet:
         Fatness: {self.fatness}
         Boredom: {self.boredom}
         """)
-
+    
+    def speak(self):
+        print(f""" 
+        You yell out to {self.name}. 
+        They stare at you strangely for a few moments before loudly yelling
+        {randphrase}!
+        """)
 
