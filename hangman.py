@@ -1,7 +1,7 @@
 import random
 import os
 
-WORDS = ["handkerchief", "accommodate", "indict", "impetuous"]
+WORDS = ["handkerchief", "accommodate", "indict", "impetuous","exponentially","incredible","apothecary", "taxidermist","oceanography","intelligence"]
 MAX_GUESSES = 7
 
 
