@@ -151,21 +151,22 @@ Please choose an animal.
 6 - Bird
 Choice: """))
 
-        while pet_choice == 1 or pet_choice == 2 or pet_choice == 3 or pet_choice == 4 or pet_choice == 5 or pet_choice == 2:
-            if pet_choice == 1:
-                print(f"\nCongratulations! {dog.name} is now your pet! Treat them with care or else!\n")
-            elif pet_choice == 2:
-                print(f"\nCongratulations! {cat.name} is now your pet! Treat them with care or else!\n")
-            elif pet_choice == 3:
-                print(f"\nCongratulations! {turtle.name} is now your pet! Treat them with care or else!\n")
-            elif pet_choice == 4:
-                print(f"\nCongratulations! {snake.name} is now your pet! Treat them with care or else!\n")
-            elif pet_choice == 5:
-                print(f"\nCongratulations! {fish.name} is now your pet! Treat them with care or else!\n")
-            elif pet_choice == 6:
-                print(f"\nCongratulations! {bird.name} is now your pet! Treat them with care or else!\n")
-                   
-            main()
-            break
+    
+        if pet_choice == 1:
+            print(f"\nCongratulations! {dog.name} is now your pet! Treat them with care or else!\n")
+        elif pet_choice == 2:
+            print(f"\nCongratulations! {cat.name} is now your pet! Treat them with care or else!\n")
+        elif pet_choice == 3:
+            print(f"\nCongratulations! {turtle.name} is now your pet! Treat them with care or else!\n")
+        elif pet_choice == 4:
+            print(f"\nCongratulations! {snake.name} is now your pet! Treat them with care or else!\n")
+        elif pet_choice == 5:
+            print(f"\nCongratulations! {fish.name} is now your pet! Treat them with care or else!\n")
+        elif pet_choice == 6:
+            print(f"\nCongratulations! {bird.name} is now your pet! Treat them with care or else!\n")
+        else:
+            break        
+        main()
+            
     except ValueError:
         print_menu_error()
