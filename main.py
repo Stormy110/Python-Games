@@ -2,6 +2,7 @@ from pet_game import Pet
 from subprocess import call
 import os
 import time
+
 def clear():
     time.sleep(3)
     call('clear' if os.name == 'posix' else 'cls')
@@ -113,9 +114,9 @@ You are dead!
         if pet.happiness >= 150:
             print("\nYou have achieved maximum pet happiness. \nCongratulations, you win!\n")
             break
-        if pet.fatness > 80 and pet.fatness < 100:
+        if pet.fatness > 130 and pet.fatness < 150:
             print(f"\n{pet.name} has gotten too fat! {pet.name} needs to exercise!\n")
-        if pet.fatness >= 100 or pet.fullness >= 100:
+        if pet.fatness >= 150 or pet.fullness >= 100:
             print(f"\n{pet.name} has had a heart attack and died. Next time exercise your pet!\n")
             break
         if pet.boredom > 80 and pet.boredom < 100:
@@ -124,12 +125,15 @@ You are dead!
             print(f"\n{pet.name} ran away from you because you are horribly boring!\n")
             break
         clear()
+
+
 dog = Pet("Peanut WiggleButt", 60, 55, 0, 25)
 cat = Pet("Chairman Meow", 60, 50, -1, 15)
 turtle = Pet("Count Flufferton", 60, 50, 1, 40)
 snake = Pet("Monty Python", 60, 50, 5, 25)
 fish = Pet("Magikarp", 60, 50, 55, 20)
 bird = Pet("Sir Tweet Tweet", 60, 50, 3, 20)
+
 
 print(''' 
 ************* VIRTUAL PET SIMULATOR  ****************
