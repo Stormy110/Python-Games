@@ -34,11 +34,11 @@ class Pet:
         print(f"\n{self.name} has been ignored. Their sadness level is {self.sadness}.\n")
 
     def stay_alive(self):
-        self.fullness -= 4
-        self.happiness -= 4
-        self.sadness += 3
-        self.fatness += 2
-        self.boredom += 3
+        self.fullness -= 5
+        self.happiness -= 5
+        self.sadness += 4
+        self.fatness += 3
+        self.boredom += 4
 
     def give_toy(self):
         self.happiness += 10
@@ -79,8 +79,8 @@ class Pet:
     
     def speak(self):
         print(f""" 
-You yell out to {self.name}. 
-They stare at you strangely for a few moments before loudly yelling
+You call out {self.name}'s name'. 
+They stare at you strangely for a few moments before responding with:
 {randphrase}!
         """)
 

@@ -1,4 +1,10 @@
 from pet_game import Pet 
+from subprocess import call
+import os
+import time
+def clear():
+    time.sleep(4)
+    call('clear' if os.name == 'posix' else 'cls')
 
 main_menu = [   
     "Play with Pet",
@@ -94,9 +100,9 @@ def main():
             print(f"\n{pet.name} is starving! Feed {pet.name} immediately!\n")
         if pet.fullness <= 0:
             print(f"""
-            {pet.name} is starving to death!
-            {pet.name} attacks and eats you!
-            You're fucking dead!
+{pet.name} is starving to death!
+{pet.name} decides to eat you!
+You are dead!
             """)
             break
         if pet.happiness < 20 and pet.happiness > 0:
@@ -115,17 +121,20 @@ def main():
         if pet.boredom > 80 and pet.boredom < 100:
             print(f"\n{pet.name} is very bored. They are thinking about running away...\n")
         if pet.boredom >= 100:
-            print(f"\n{pet.name} ran away from you because you are a boring person.\n")
+            print(f"\n{pet.name} ran away from you because you are horribly boring!\n")
             break
-   
-dog = Pet("Beetlejuice", 60, 55, 0, 25)
-cat = Pet("Meow ZeDong", 60, 50, -1, 15)
-turtle = Pet("Leonardo", 60, 50, 1, 40)
-snake = Pet("Fluffy", 60, 50, 5, 25)
-fish = Pet("Jaws", 60, 50, 55, 20)
-bird = Pet("Frank", 60, 50, 3, 20)
+        clear()
+dog = Pet("Peanut WiggleButt", 60, 55, 0, 25)
+cat = Pet("Chairman Meow", 60, 50, -1, 15)
+turtle = Pet("Count Flufferton", 60, 50, 1, 40)
+snake = Pet("Monty Python", 60, 50, 5, 25)
+fish = Pet("Magikarp", 60, 50, 55, 20)
+bird = Pet("Sir Tweet Tweet", 60, 50, 3, 20)
 
-
+print(''' 
+************* VIRTUAL PET SIMULATOR  ****************
+             (press ctrl + c to quit)
+''')
 while True:        
     try:
         pet_choice = int(input("""
@@ -138,23 +147,21 @@ Please choose an animal.
 6 - Bird
 Choice: """))
 
-
-        if pet_choice == 1:
-            print(f"\nCongratulations! {dog.name} is now your pet! Treat them with care or else!\n")
-        elif pet_choice == 2:
-            print(f"\nCongratulations! {cat.name} is now your pet! Treat them with care or else!\n")
-        elif pet_choice == 3:
-            print(f"\nCongratulations! {turtle.name} is now your pet! Treat them with care or else!\n")
-        elif pet_choice == 4:
-            print(f"\nCongratulations! {snake.name} is now your pet! Treat them with care or else!\n")
-        elif pet_choice == 5:
-            print(f"\nCongratulations! {fish.name} is now your pet! Treat them with care or else!\n")
-        elif pet_choice == 6:
-            print(f"\nCongratulations! {bird.name} is now your pet! Treat them with care or else!\n")
-        else:
-            print("\nYou did not choose a pet.\n")
+        while pet_choice == 1 or pet_choice == 2 or pet_choice == 3 or pet_choice == 4 or pet_choice == 5 or pet_choice == 2:
+            if pet_choice == 1:
+                print(f"\nCongratulations! {dog.name} is now your pet! Treat them with care or else!\n")
+            elif pet_choice == 2:
+                print(f"\nCongratulations! {cat.name} is now your pet! Treat them with care or else!\n")
+            elif pet_choice == 3:
+                print(f"\nCongratulations! {turtle.name} is now your pet! Treat them with care or else!\n")
+            elif pet_choice == 4:
+                print(f"\nCongratulations! {snake.name} is now your pet! Treat them with care or else!\n")
+            elif pet_choice == 5:
+                print(f"\nCongratulations! {fish.name} is now your pet! Treat them with care or else!\n")
+            elif pet_choice == 6:
+                print(f"\nCongratulations! {bird.name} is now your pet! Treat them with care or else!\n")
+                   
+            main()
             break
-            
-        main()
     except ValueError:
         print_menu_error()
