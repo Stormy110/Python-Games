@@ -41,9 +41,9 @@ class Pet:
         self.boredom += 4
 
     def give_toy(self):
-        self.happiness += 10
-        self.sadness -= 5
-        self.boredom -= 15
+        self.happiness += 25
+        self.sadness -= 15
+        self.boredom -= 25
         print(f"\nYou have given {self.name} a toy! {self.name} is very happy!\n")
 
     def snuggle(self):
@@ -79,7 +79,7 @@ class Pet:
     
     def speak(self):
         print(f""" 
-You call out {self.name}'s name'. 
+You call out {self.name}'s name. 
 They stare at you strangely for a few moments before responding with:
 {randphrase}!
         """)

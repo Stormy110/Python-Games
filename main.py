@@ -3,7 +3,7 @@ from subprocess import call
 import os
 import time
 def clear():
-    time.sleep(4)
+    time.sleep(3)
     call('clear' if os.name == 'posix' else 'cls')
 
 main_menu = [   
